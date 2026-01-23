@@ -459,7 +459,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Classification Training with LabelDP")
 
     parser.add_argument('--task', type=str, default='classification', choices=['classification'], help='Task type')
-    parser.add_argument('--dataset', type=str, default='cifar10_1', choices=['cifar10_1', 'cifar10_2', 'cifar10_3'], help='Dataset name')
+    parser.add_argument('--dataset', type=str, default='cifar10_1', choices=['cifar10_1', 'cifar10_2'], help='Dataset name')
     parser.add_argument('--data_dir', type=str, default='../data', help='Dataset directory')
     parser.add_argument('--arch', type=str, default='resnet18v2', help='Model architecture name')
     parser.add_argument('--mechanism', type=str, default='rrwithweight', choices=['rr', 'rrwithweight', 'rrwithprior'], help='LabelDP mechanism')
